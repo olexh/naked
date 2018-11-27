@@ -1,31 +1,26 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>Editor</title>
+	<title>Naked ditor</title>
 	<link rel="stylesheet" href="libs/css/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<!-- <div id="loader_div">
-	<div class="dim">
-	</div>  
-    <div class="loader"></div>
-</div> -->
-
+<a id="download_naked" href="#" download="naked.png"></a>
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<h1>Editor</h1>
+			<h1>Naked editor</h1>
 		</div>
 		<div class="col-md-12">
 			  <div class="form-group">
-			    <label>Текст</label>
+			    <label>Text</label>
 			    <textarea rows="3" name="text" id="text_for_img" class="form-control"></textarea>
 			  </div>
 			  <div class="form-group">
-			  	<label>Стікер</label>
+			  	<label>Sticker</label>
 				  <select class="form-control" name="img_type" id="img_type">
 					  <option value="1">😞</option>
 					  <option value="2">😭</option>
@@ -33,23 +28,18 @@
 					  <option value="4">😎</option>
 				  </select>
 			  </div>
+			  <div class="form-group">
+			  	<input id="create_image" type="button" class="btn btn-primary" value="Download">
+			  </div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-12">
 			<div class="bg_img" id="capture">
 				<div id="text_img">
-					<p>Текст</p>
+					<p>Text</p>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<a id="download_naked" href="#" download="naked.png"><input id="create_image" type="button" class="btn btn-primary" value="Створити зображення"></a>
-		</div>
-		<div class="col-md-6">
-			<!-- <a id="download_naked" href="#" download="naked.png"><input type="button" class="btn btn-primary" value="Завантажити зображення"></a> -->
 		</div>
 	</div>
 </div>

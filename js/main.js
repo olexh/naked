@@ -1,15 +1,9 @@
 $( "#create_image" ).click(function() {
-	// html2canvas(document.querySelector("#capture")).then(canvas => {
- //        document.body.appendChild(canvas)
-	// 	var image = canvas.toDataURL("image/png");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
-	// 	// window.location.href = image;
- //        $("#download_naked").attr("href", image.replace("image/png", "image/octet-stream"));
- //        $("#download_naked").attr("download", String(Date.now())+".png");
-	// });
     domtoimage.toJpeg(document.querySelector("#capture"), { quality: 1 })
     .then(function (dataUrl) {
         $("#download_naked").attr("href", dataUrl);
         $("#download_naked").attr("download", String(Date.now())+".png");
+        document.getElementById("download_naked").click();
     });
 });
 
