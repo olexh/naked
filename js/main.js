@@ -9,9 +9,25 @@ $( "#create_image" ).click(function() {
 
 $( "#img_type" )
   .change(function () {
-    var str = $( "select option:selected" ).val() + ".jpg";
-    $("#capture").css("background-image", "url(" + str + ")");
-    // html("<img crossOrigin='Anonymous' src='" + str + "'>");
+    var str = $( "select option:selected" ).val() + ".png";
+    $(".sticker").css("background-image", "url(stickers/" + str + ")");
+    var color = "#fff";
+    switch ($( "select option:selected" ).val()) {
+        case '1':
+            color = "#d09f6b";
+            break;
+        case '2':
+            color = "#68a86d";
+            break;
+        case '3':
+            color = "#de75bb";
+            break;
+        case '4':
+            color = "#4788c4";
+            break;
+    }
+    $("#label_color").val(color);
+    $(".naked_label").css("background-color", color);
   })
 
 $('#text_for_img').on('input', function() {
@@ -30,3 +46,9 @@ $('#text_for_img').on('input', function() {
     	}
     }
 });
+
+$( "#label_color" )
+  .change(function () {
+    var str = $( "#label_color" ).val();
+    $(".naked_label").css("background-color", str);
+  })

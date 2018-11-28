@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Naked ditor</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 	<link rel="stylesheet" href="libs/css/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -20,13 +21,21 @@
 			    <textarea rows="3" name="text" id="text_for_img" class="form-control"></textarea>
 			  </div>
 			  <div class="form-group">
-			  	<label>Sticker</label>
-				  <select class="form-control" name="img_type" id="img_type">
-					  <option value="1">😞</option>
-					  <option value="2">😭</option>
-					  <option value="3">😊</option>
-					  <option value="4">😎</option>
-				  </select>
+			  	<div class="row">
+			  		<div class="col-md-6">
+			  			<label>Sticker</label>
+						  <select class="form-control" name="img_type" id="img_type">
+							  <option value="1">😞</option>
+							  <option value="2">😭</option>
+							  <option value="3">😊</option>
+							  <option value="4">😎</option>
+						  </select>
+			  		</div>
+			  		<div class="col-md-6">
+			  			<label>Label color</label>
+						<input id="label_color" value="#d09f6b" type="text" class="form-control">
+			  		</div>
+			  	</div>
 			  </div>
 			  <div class="form-group">
 			  	<input id="create_image" type="button" class="btn btn-primary" value="Download">
@@ -36,6 +45,11 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="bg_img" id="capture">
+				<div class="sticker">
+				</div>
+				<div class="naked_label">
+					<p>instagram.com/<b>naked.loser</b></p>
+				</div>
 				<div id="text_img">
 					<p>Text</p>
 				</div>
