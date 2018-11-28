@@ -2,16 +2,12 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-#capture {
-    width: 1024px;
-    height: 1024px;
-}
-
 .bg_img {
     position: absolute;
 	background-image: url("../back.jpg");
 	height: 1024px;
 	width: 1024px;
+    left: 0;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
