@@ -25,6 +25,9 @@ $( "#img_type" )
         case '4':
             color = "#4788c4";
             break;
+        default:
+            color = "#4788c4";
+            break;
     }
     $("#label_color").val(color);
     $(".naked_label").css("background-color", color);
